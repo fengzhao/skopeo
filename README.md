@@ -22,7 +22,7 @@ Skopeo works with API V2 container image registries such as [docker.io](https://
  * Syncing an external image repository to an internal registry for air-gapped deployments.
  * When required by the repository, skopeo can pass the appropriate credentials and certificates for authentication.
 
- Skopeo operates on the following image and repository types:
+ Skopeo operate on the following image and repository types:
 
  * containers-storage:docker-reference
          An image located in a local containers/storage image store.  Both the location and image store are specified in /etc/containers/storage.conf. (This is  the backend for [Podman](https://podman.io), [CRI-O](https://cri-o.io), [Buildah](https://buildah.io) and friends)
