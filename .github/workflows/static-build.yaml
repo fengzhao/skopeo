@@ -1,5 +1,6 @@
 ---
 name: build static binary
+# 更新
 on: push
 jobs:
   build:
