@@ -16,12 +16,12 @@ jobs:
           docker run --rm -t -v $PWD:/build --name builder ${BUILD_IMAGE} \
           sh -c "cd /build && nix build -f nix && cp ./result/bin/skopeo skopeo-linux-amd64"
 
-      - name: Release
-        uses: softprops/action-gh-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          files: skopeo-linux-amd64
+#       - name: Release
+#         uses: softprops/action-gh-release@v1
+#         env:
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#         with:
+#           files: skopeo-linux-amd64
 
 
   tag_version:
